@@ -24,7 +24,7 @@ CountryList.prototype.getName = function getName (code) {
 
 CountryList.prototype.getLookupNames = function getLookupNames () {
   return data.map(function (country) {
-    return country.name.toUpperCase
+    return country.name.toLowerCase()
   })
 }
 
