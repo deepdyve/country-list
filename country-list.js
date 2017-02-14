@@ -12,11 +12,12 @@ data.forEach(function (country) {
   codeMap[country.code.toLowerCase()] = country.name
 })
 
+// import { countries } from 'country-list'
+module.exports.countries = new CountryList()
 function CountryList () {
   if (!(this instanceof CountryList)) return new CountryList()
 };
 
-module.exports.default = new CountryList()
 
 CountryList.prototype.getCode = function getCode (name) {
   return nameMap[name.toLowerCase()]
