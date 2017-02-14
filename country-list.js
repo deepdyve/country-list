@@ -1,6 +1,6 @@
 'use strict'
 
-var data = require('./data.js')
+var data = require('./data.js').default
 
 /**
  * Precompute name and code lookups.
